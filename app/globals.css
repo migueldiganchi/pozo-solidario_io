@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Colors */
+  --background: 220 15% 8%; /* Deep dark gray/blue */
+  --surface: 220 12% 12%; /* Slightly lighter dark for cards/elements */
+  --surface-hover: 220 10% 18%; /* Even lighter dark for hover states */
+  --primary: 150 40% 45%; /* Subtle, desaturated green/emerald */
+  --primary-hover: 150 40% 55%; /* Slightly brighter/lighter primary for hover */
+  --primary-light: 150 60% 65%; /* Lighter primary for gradients */
+  --primary-dark: 150 50% 35%; /* Darker primary for gradients */
+  --gold: 40 60% 60%; /* Desaturated gold for highlights */
+  --text: 220 10% 85%; /* Off-white */
+  --text-secondary: 220 8% 60%; /* Lighter gray */
+  --border: 220 10% 15%; /* Very subtle dark gray */
+  --success: 120 40% 40%; /* Desaturated green */
+  --danger: 0 50% 45%; /* Desaturated red */
+
+  /* Spacing - Tailwind defaults are good */
+  /* Border Radius - Tailwind defaults are good */
+  /* Shadows - Defined in tailwind.config.js */
+  /* Typography - Defined in tailwind.config.js */
+  /* Text Sizes - Tailwind defaults are good */
+}
+
+/* Base styles for the body */
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--text));
+}
+
+/* General link styles */
+a {
+  color: hsl(var(--primary));
+  transition: color 0.2s ease-in-out;
+}
+a:hover {
+  color: hsl(var(--primary-hover));
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid hsl(var(--primary-hover));
+  outline-offset: 2px;
+  border-radius: 4px; /* Adjust based on component shape */
+}
+
+/* Custom utility classes for common styles */
+.btn-primary {
+  @apply px-8 py-4 rounded-2xl bg-primary text-background font-semibold text-base transition-all;
+  @apply hover:bg-primary-hover active:scale-[0.98];
+}
+
+.btn-secondary {
+  @apply px-8 py-4 rounded-2xl border border-border text-text-secondary text-base transition-all;
+  @apply hover:text-text hover:border-primary-hover;
+}
+
+.card-base {
+  @apply bg-surface border border-border rounded-2xl p-6 transition-all;
+}
+
+.badge-base {
+  @apply inline-flex items-center gap-2.5 px-4 py-2 rounded-full border text-xs font-medium;
+}
+
+.input-base {
+  @apply w-full px-4 py-2 rounded-lg bg-surface border border-border text-text placeholder-text-secondary focus:outline-none focus:ring-2 focus:ring-primary-hover transition-all;
+}
+
+/* Text glow for display fonts */
+.text-glow {
+  text-shadow: 0 0 8px hsl(var(--primary) / 0.3), 0 0 15px hsl(var(--primary) / 0.1);
+}
+
+/* Border gradient for cards/elements */
+.border-gradient {
+  position: relative;
+  border: 1px solid transparent;
+  background-clip: padding-box;
+}
+
+.border-gradient::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -1px; /* Adjust to match border width */
+  border-radius: inherit; /* Inherit border-radius from parent */
+  background: linear-gradient(to bottom right, hsl(var(--border)), hsl(var(--border) / 0.3));
+}
+
+/* Microinteractions */
+.group:hover .group-hover-lift {
+  animation: hoverLift 0.2s ease-out forwards;
+}
+
+.group:hover .group-hover-shadow {
+  animation: hoverShadow 0.2s ease-out forwards;
+}
