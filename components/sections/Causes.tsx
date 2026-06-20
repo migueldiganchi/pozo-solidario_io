@@ -56,7 +56,7 @@ export function Causes({ visitorId }: CausesProps) {
 
       if (data.alreadyVoted) {
         toast('Ya apoyaste esta causa esta semana')
-        setVotedIds(prev => new Set([...prev, causeId]))
+        setVotedIds(prev => new Set([...Array.from(prev), causeId]))
         return
       }
 
@@ -66,7 +66,7 @@ export function Causes({ visitorId }: CausesProps) {
         c._id === causeId ? { ...c, votes: data.votes } : c
       ))
 
-      const newVoted = [...votedIds, causeId]
+      const newVoted = [...Array.from(votedIds), causeId]
       setVotedIds(new Set(newVoted))
       localStorage.setItem('ps_voted', JSON.stringify(newVoted))
 
