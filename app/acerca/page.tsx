@@ -179,10 +179,10 @@ export default function AcercaPage() {
             transition={{ delay: 0.2, duration: 0.7 }}
             className="space-y-2 text-text"
           >
-            <h1 className="font-display italic text-[clamp(3rem,9vw,7rem)] leading-[0.9] text-white tracking-tight">
+            <h1 className="font-display italic text-[clamp(2rem,7vw,3rem)] leading-[0.9] text-white tracking-tight">
               Internet unido
             </h1>
-            <h1 className="font-display italic text-[clamp(3rem,9vw,7rem)] leading-[0.9] tracking-tight">
+            <h1 className="font-display italic text-[clamp(2rem,7vw,3rem)] leading-[0.9] tracking-tight">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-light to-primary-dark">
                 generando ayuda real.
               </span>
