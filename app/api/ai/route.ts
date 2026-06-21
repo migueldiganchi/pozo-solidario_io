@@ -52,15 +52,22 @@ const requestCounts = new Map<string, { count: number; resetAt: number }>()
 function checkRateLimit(ip: string): boolean {
   const now = Date.now()
   const entry = requestCounts.get(ip)
-  
+
   if (!entry || now > entry.resetAt) {
     requestCounts.set(ip, { count: 1, resetAt: now + 60000 })
     return true
   }
-  
+
   if (entry.count >= 20) return false
   entry.count++
   return true
+}
+
+// El SDK de Gemini SOLO acepta los roles "user" y "model" en el history.
+// El frontend puede estar mandando "assistant" (estilo OpenAI) u otros valores,
+// así que normalizamos: cualquier cosa que no sea "user" se convierte en "model".
+function normalizeRole(role: string): 'user' | 'model' {
+  return role === 'user' ? 'user' : 'model'
 }
 
 export async function POST(req: NextRequest) {
@@ -76,7 +83,15 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Mensaje inválido' }, { status: 400 })
     }
 
-    const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash-exp' })
+    // systemInstruction debe pasarse en getGenerativeModel (no en startChat),
+    // y como objeto Content { role, parts } — no como string plano.
+    const model = genAI.getGenerativeModel({
+      model: 'gemini-2.5-flash',
+      systemInstruction: {
+        role: 'system',
+        parts: [{ text: SYSTEM_PROMPT }],
+      },
+    })
 
     const chat = model.startChat({
       history: [
@@ -89,13 +104,12 @@ export async function POST(req: NextRequest) {
           role: 'model',
           parts: [{ text: 'Entendido. Estoy listo para ayudar.' }], // Acknowledge the primer
         },
-        // Actual conversation history, limited to recent turns
+        // Actual conversation history, limited to recent turns, con roles normalizados
         ...history.slice(-6).map((h: any) => ({
-          role: h.role,
+          role: normalizeRole(h.role),
           parts: [{ text: h.content }],
         })),
       ],
-      systemInstruction: SYSTEM_PROMPT,
     })
 
     const result = await chat.sendMessage(message)
