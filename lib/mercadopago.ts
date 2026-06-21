@@ -1,6 +1,6 @@
 import { PRICE_PER_NUMBER } from './utils'
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:1369'
 
 export async function createPreference({
   quantity,
