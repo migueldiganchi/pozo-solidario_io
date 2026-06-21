@@ -4,19 +4,32 @@
 
 :root {
   /* Colors */
-  --background: 220 15% 8%; /* Deep dark gray/blue */
-  --surface: 220 12% 12%; /* Slightly lighter dark for cards/elements */
-  --surface-hover: 220 10% 18%; /* Even lighter dark for hover states */
-  --primary: 150 40% 45%; /* Subtle, desaturated green/emerald */
-  --primary-hover: 150 40% 55%; /* Slightly brighter/lighter primary for hover */
-  --primary-light: 150 60% 65%; /* Lighter primary for gradients */
-  --primary-dark: 150 50% 35%; /* Darker primary for gradients */
-  --gold: 40 60% 60%; /* Desaturated gold for highlights */
-  --text: 220 10% 85%; /* Off-white */
-  --text-secondary: 220 8% 60%; /* Lighter gray */
-  --border: 220 10% 15%; /* Very subtle dark gray */
-  --success: 120 40% 40%; /* Desaturated green */
-  --danger: 0 50% 45%; /* Desaturated red */
+  --background: 220 15% 8%;
+  /* Deep dark gray/blue */
+  --surface: 220 12% 12%;
+  /* Slightly lighter dark for cards/elements */
+  --surface-hover: 220 10% 18%;
+  /* Even lighter dark for hover states */
+  --primary: 150 40% 45%;
+  /* Subtle, desaturated green/emerald */
+  --primary-hover: 150 40% 55%;
+  /* Slightly brighter/lighter primary for hover */
+  --primary-light: 150 60% 65%;
+  /* Lighter primary for gradients */
+  --primary-dark: 150 50% 35%;
+  /* Darker primary for gradients */
+  --gold: 40 60% 60%;
+  /* Desaturated gold for highlights */
+  --text: 220 10% 85%;
+  /* Off-white */
+  --text-secondary: 220 8% 60%;
+  /* Lighter gray */
+  --border: 220 10% 15%;
+  /* Very subtle dark gray */
+  --success: 120 40% 40%;
+  /* Desaturated green */
+  --danger: 0 50% 45%;
+  /* Desaturated red */
 
   /* Spacing - Tailwind defaults are good */
   /* Border Radius - Tailwind defaults are good */
@@ -36,6 +49,7 @@ a {
   color: hsl(var(--primary));
   transition: color 0.2s ease-in-out;
 }
+
 a:hover {
   color: hsl(var(--primary-hover));
 }
@@ -44,7 +58,8 @@ a:hover {
 *:focus-visible {
   outline: 2px solid hsl(var(--primary-hover));
   outline-offset: 2px;
-  border-radius: 4px; /* Adjust based on component shape */
+  border-radius: 4px;
+  /* Adjust based on component shape */
 }
 
 /* Custom utility classes for common styles */
@@ -90,8 +105,10 @@ a:hover {
   bottom: 0;
   left: 0;
   z-index: -1;
-  margin: -1px; /* Adjust to match border width */
-  border-radius: inherit; /* Inherit border-radius from parent */
+  margin: -1px;
+  /* Adjust to match border width */
+  border-radius: inherit;
+  /* Inherit border-radius from parent */
   background: linear-gradient(to bottom right, hsl(var(--border)), hsl(var(--border) / 0.3));
 }
 
@@ -102,4 +119,11 @@ a:hover {
 
 .group:hover .group-hover-shadow {
   animation: hoverShadow 0.2s ease-out forwards;
+}
+
+/* en tu globals.css, al final */
+input,
+textarea,
+select {
+  border-radius: 12px !important;
 }
