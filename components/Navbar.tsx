@@ -30,7 +30,7 @@ export function Navbar({ onParticipate }: NavbarProps) {
       <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2.5 group">
           <img src="/logo.png" alt="Logo Pozo Solidario" className="w-8 h-8 object-contain transition-transform group-hover:scale-105" />
-          <span className="font-display text-lg italic text-text group-hover:text-primary transition-colors">
+          <span className="font-display text-lg text-text group-hover:text-primary transition-colors">
             Pozo Solidario
           </span>
         </Link>

@@ -100,7 +100,7 @@ export function Causes({ visitorId }: CausesProps) {
         <div className="flex items-end justify-between">
           <div>
             <div className="text-xs text-green-400/60 uppercase tracking-widest mb-3 font-medium">Esta semana</div>
-            <h2 className="font-display italic text-4xl md:text-5xl text-white">Causas</h2>
+            <h2 className="font-display text-4xl md:text-5xl text-white">Causas</h2>
             <p className="text-white/40 text-sm mt-2">Las 3 más votadas reciben ayuda real.</p>
           </div>
           <button
@@ -236,14 +236,14 @@ function ProposeModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => voi
                   className="text-center py-8 space-y-4"
                 >
                   <div className="text-5xl">✅</div>
-                  <h3 className="font-display italic text-2xl text-white">¡Recibido!</h3>
+                  <h3 className="font-display text-2xl text-white">¡Recibido!</h3>
                   <p className="text-white/40 text-sm">Tu causa fue enviada y será revisada pronto.</p>
                   <button onClick={onClose} className="mt-4 text-white/50 hover:text-white text-sm">Cerrar</button>
                 </motion.div>
               ) : (
                 <div className="space-y-6">
                   <div className="flex items-center justify-between">
-                    <h2 className="font-display italic text-2xl text-white">Proponer causa</h2>
+                    <h2 className="font-display text-2xl text-white">Proponer causa</h2>
                     <button onClick={onClose} className="text-white/30 hover:text-white/70">✕</button>
                   </div>
 

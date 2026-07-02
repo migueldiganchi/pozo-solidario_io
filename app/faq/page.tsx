@@ -222,7 +222,7 @@ export default function FAQPage() {
             transition={{ delay: i * 0.06 }}
             className="space-y-1"
           > {/* FAQ Group */}
-            <h2 className="font-display italic text-2xl text-text mb-5">{group.category}</h2>
+            <h2 className="font-display text-2xl text-text mb-5">{group.category}</h2>
             <div className="card-base px-6 divide-y divide-border"> {/* Apply card base styles */}
               {group.items.map(item => (
                 <FAQItem key={item.q} {...item} />
@@ -246,7 +246,7 @@ export default function FAQPage() {
       {/* Final Brand Reference */}
       <div className="pt-24 pb-8 flex flex-col items-center gap-4 opacity-20">
         <img src="/logo.png" alt="Pozo Solidario" className="w-12 h-12 object-contain grayscale" />
-        <p className="font-display italic text-sm text-text">Pozo Solidario</p>
+        <p className="font-display text-sm text-text">Pozo Solidario</p>
       </div>
     </LegalLayout>
   )

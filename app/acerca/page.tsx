@@ -110,8 +110,8 @@ function NavBar() {
     >
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2.5 group">
-          <img src="/logo.png" alt="Logo" className="w-7 h-7 object-contain" />
-          <span className="font-display italic text-text group-hover:text-primary transition-colors text-lg">
+          <img src="/logo.png" alt="Logo" className="w-8 h-8 object-contain" />
+          <span className="font-display text-text group-hover:text-primary transition-colors text-lg">
             Pozo Solidario
           </span>
         </Link>
@@ -179,10 +179,10 @@ export default function AcercaPage() {
             transition={{ delay: 0.2, duration: 0.7 }}
             className="space-y-2 text-text"
           >
-            <h1 className="font-display italic text-[clamp(2rem,7vw,3rem)] leading-[0.9] text-white tracking-tight">
+            <h1 className="font-display text-[clamp(2rem,7vw,3rem)] leading-[0.9] text-white tracking-tight">
               Internet unido
             </h1>
-            <h1 className="font-display italic text-[clamp(2rem,7vw,3rem)] leading-[0.9] tracking-tight">
+            <h1 className="font-display text-[clamp(2rem,7vw,3rem)] leading-[0.9] tracking-tight">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-light to-primary-dark">
                 generando ayuda real.
               </span>
@@ -248,7 +248,7 @@ export default function AcercaPage() {
               transition={{ delay: i * 0.08 }}
               className="text-center space-y-2"
             >
-              <div className="font-display italic text-4xl md:text-5xl text-text text-glow">
+              <div className="font-display text-4xl md:text-5xl text-text text-glow">
                 {stat.value}
               </div>
               <p className="text-text-secondary text-xs leading-relaxed">{stat.label}</p>
@@ -268,7 +268,7 @@ export default function AcercaPage() {
               className="space-y-6"
             >
               <div className="text-xs text-green-400/60 uppercase tracking-widest font-medium">El concepto</div>
-              <h2 className="font-display italic text-4xl md:text-5xl text-white leading-tight">
+              <h2 className="font-display text-4xl md:text-5xl text-white leading-tight">
                 Un solo pozo.<br />Todos adentro.
               </h2>
               <div className="space-y-4 text-white/45 text-sm leading-relaxed">
@@ -312,7 +312,7 @@ export default function AcercaPage() {
                         <p className="text-white/30 text-xs">{item.desc}</p>
                       </div>
                     </div>
-                    <span className="font-display italic text-2xl text-white">{item.pct}%</span>
+                    <span className="font-display text-2xl text-white">{item.pct}%</span>
                   </div>
                   {/* Progress bar */}
                   <div className="h-1 bg-white/5 rounded-full overflow-hidden">
@@ -336,7 +336,7 @@ export default function AcercaPage() {
         <div className="max-w-5xl mx-auto space-y-16">
           <div className="text-center space-y-4">
             <div className="text-xs text-white/25 uppercase tracking-widest font-medium">El proceso</div>
-            <h2 className="font-display italic text-4xl md:text-5xl text-white">Cómo funciona</h2>
+            <h2 className="font-display text-4xl md:text-5xl text-white">Cómo funciona</h2>
             <p className="text-white/35 max-w-md mx-auto text-sm leading-relaxed">
               Diseñado para entenderse en segundos y completarse en menos de 2 minutos.
             </p>
@@ -360,7 +360,7 @@ export default function AcercaPage() {
                     </svg>
                   </div>
                 </div>
-                <h3 className="font-display italic text-xl text-white">{item.title}</h3>
+                <h3 className="font-display text-xl text-white">{item.title}</h3>
                 <p className="text-white/40 text-sm leading-relaxed">{item.body}</p>
               </motion.div>
             ))}
@@ -379,7 +379,7 @@ export default function AcercaPage() {
               className="space-y-6"
             >
               <div className="text-xs text-green-400/60 uppercase tracking-widest font-medium">Sin letra chica</div>
-              <h2 className="font-display italic text-4xl md:text-5xl text-white leading-tight">
+              <h2 className="font-display text-4xl md:text-5xl text-white leading-tight">
                 Transparencia<br />total.
               </h2>
               <div className="space-y-4 text-white/45 text-sm leading-relaxed">
@@ -440,7 +440,7 @@ export default function AcercaPage() {
         <div className="max-w-5xl mx-auto space-y-16">
           <div className="text-center space-y-4">
             <div className="text-xs text-yellow-400/60 uppercase tracking-widest font-medium">Para empresas</div>
-            <h2 className="font-display italic text-4xl md:text-5xl text-white">¿Tenés algo para donar como premio?</h2>
+            <h2 className="font-display text-4xl md:text-5xl text-white">¿Tenés algo para donar como premio?</h2>
             <p className="text-white/35 max-w-lg mx-auto text-sm leading-relaxed">
               Las empresas y marcas pueden donar productos o servicios como premios semanales. Tu marca aparece en la plataforma frente a miles de personas con intención real de participar.
             </p>
@@ -482,7 +482,7 @@ export default function AcercaPage() {
       <section id="faq" className="py-32 px-6 border-t border-white/5">
         <div className="max-w-3xl mx-auto space-y-12">
           <div className="text-center space-y-3">
-            <h2 className="font-display italic text-4xl md:text-5xl text-white">Preguntas frecuentes</h2>
+            <h2 className="font-display text-4xl md:text-5xl text-white">Preguntas frecuentes</h2>
           </div>
 
           <div className="space-y-4">
@@ -524,7 +524,7 @@ export default function AcercaPage() {
             viewport={{ once: true }}
             className="relative space-y-6"
           >
-            <h2 className="font-display italic text-4xl md:text-6xl text-white leading-tight">
+            <h2 className="font-display text-4xl md:text-6xl text-white leading-tight">
               Esto puede crecer a<br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-emerald-500">
                 millones de usuarios.
@@ -557,7 +557,7 @@ export default function AcercaPage() {
           <div className="flex flex-col md:flex-row items-start justify-between gap-10">
             <div className="space-y-4">
               <img src="/logo.png" alt="Logo" className="w-10 h-10 object-contain opacity-50" />
-              <p className="font-display italic text-2xl text-text">Pozo Solidario</p>
+              <p className="font-display text-2xl text-text">Pozo Solidario</p>
               <p className="text-text-secondary text-xs max-w-xs leading-relaxed">
                 Sorteo solidario semanal. Transparente, verificable, comunitario.
               </p>

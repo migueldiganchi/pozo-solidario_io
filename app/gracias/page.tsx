@@ -36,7 +36,7 @@ function ThanksContent() {
     return (
       <div className="text-center space-y-6">
         <div className="text-5xl">😔</div>
-        <h1 className="font-display italic text-4xl text-white">Pago no completado</h1>
+        <h1 className="font-display text-4xl text-white">Pago no completado</h1>
         <p className="text-white/40">No se realizó ningún cargo.</p>
         <Link href="/" className="inline-block mt-4 px-6 py-3 rounded-2xl bg-white/5 text-white/70 hover:bg-white/10 transition-all">
           Volver al inicio
@@ -49,7 +49,7 @@ function ThanksContent() {
     return (
       <div className="text-center space-y-6">
         <div className="text-5xl">⏳</div>
-        <h1 className="font-display italic text-4xl text-white">Pago pendiente</h1>
+        <h1 className="font-display text-4xl text-white">Pago pendiente</h1>
         <p className="text-white/40">Tu pago está siendo procesado.<br />Te notificaremos cuando se confirme.</p>
         <Link href="/" className="inline-block mt-4 px-6 py-3 rounded-2xl bg-white/5 text-white/70 hover:bg-white/10 transition-all">
           Volver al inicio
@@ -74,7 +74,7 @@ function ThanksContent() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="font-display italic text-4xl md:text-5xl text-white"
+          className="font-display text-4xl md:text-5xl text-white"
         >
           Gracias por ayudar.
         </motion.h1>

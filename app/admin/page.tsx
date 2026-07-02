@@ -56,7 +56,7 @@ export default function AdminPage() {
     return (
       <main className="min-h-screen flex items-center justify-center px-6">
         <div className="w-full max-w-sm space-y-4">
-          <h1 className="font-display italic text-3xl text-white text-center">Admin</h1>
+          <h1 className="font-display text-3xl text-white text-center">Admin</h1>
           <input
             type="password"
             value={secret}
@@ -79,7 +79,7 @@ export default function AdminPage() {
   return (
     <main className="min-h-screen px-6 py-12 max-w-4xl mx-auto space-y-12">
       <div className="flex items-center justify-between">
-        <h1 className="font-display italic text-3xl text-white">Admin · Pozo Solidario</h1>
+        <h1 className="font-display text-3xl text-white">Admin · Pozo Solidario</h1>
         <span className="text-xs text-white/30">{data?.weekId}</span>
       </div>
 

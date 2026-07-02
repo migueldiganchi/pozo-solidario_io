@@ -40,7 +40,7 @@ export function MyNumbers({ visitorId, isOpen, onClose }: MyNumbersProps) {
             <div className="pointer-events-auto w-full md:max-w-md md:mx-auto bg-[hsl(0,0%,6%)] border border-white/10 rounded-t-3xl md:rounded-3xl p-8 space-y-6">
               <div className="flex items-center justify-between">
                 <div>
-                  <h2 className="font-display italic text-2xl text-white">Mis números</h2>
+                  <h2 className="font-display text-2xl text-white">Mis números</h2>
                   <p className="text-white/30 text-xs mt-1">Semana actual</p>
                 </div>
                 <button onClick={onClose} className="text-white/30 hover:text-white/70">✕</button>

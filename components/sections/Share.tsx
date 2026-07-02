@@ -53,7 +53,7 @@ export function Share({ visitorId }: ShareProps) {
         >
           <div className="space-y-3">
             <div className="text-4xl">🔗</div>
-            <h2 className="font-display italic text-3xl md:text-4xl text-white">Compartí y ganá</h2>
+            <h2 className="font-display text-3xl md:text-4xl text-white">Compartí y ganá</h2>
             <p className="text-white/40 text-sm leading-relaxed">
               Por cada 10 personas que participen desde tu link,<br />
               recibís <span className="text-white/70">1 número gratis</span>.
@@ -84,15 +84,15 @@ export function Share({ visitorId }: ShareProps) {
           {referralData && (
             <div className="grid grid-cols-3 gap-4 pt-4 border-t border-white/5">
               <div className="text-center">
-                <div className="text-2xl font-display italic text-white">{referralData.visits || 0}</div>
+                <div className="text-2xl font-display text-white">{referralData.visits || 0}</div>
                 <div className="text-xs text-white/30 mt-1">Visitas</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-display italic text-white">{referralData.conversions || 0}</div>
+                <div className="text-2xl font-display text-white">{referralData.conversions || 0}</div>
                 <div className="text-xs text-white/30 mt-1">Participaron</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-display italic text-green-400">{referralData.pendingFreeNumbers || 0}</div>
+                <div className="text-2xl font-display text-green-400">{referralData.pendingFreeNumbers || 0}</div>
                 <div className="text-xs text-white/30 mt-1">Núm. gratis</div>
               </div>
             </div>

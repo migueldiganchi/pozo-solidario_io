@@ -41,7 +41,7 @@ export function Prizes() {
       <div className="max-w-4xl mx-auto space-y-12">
         <div>
           <div className="text-xs text-yellow-400/60 uppercase tracking-widest mb-3 font-medium">Esta semana</div>
-          <h2 className="font-display italic text-4xl md:text-5xl text-white">Premios</h2>
+          <h2 className="font-display text-4xl md:text-5xl text-white">Premios</h2>
           <p className="text-white/40 text-sm mt-2">Sorteados el martes a las 21:00 entre todos los participantes.</p>
         </div>
 

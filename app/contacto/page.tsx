@@ -67,7 +67,7 @@ export default function ContactPage() {
                 className="border border-green-400/20 bg-green-400/[0.04] rounded-3xl p-10 text-center space-y-4"
               >
                 <div className="text-5xl">✅</div>
-                <h2 className="font-display italic text-2xl text-white">¡Mensaje enviado!</h2>
+                <h2 className="font-display text-2xl text-white">¡Mensaje enviado!</h2>
                 <p className="text-white/40 text-sm leading-relaxed">
                   Recibimos tu mensaje y te respondemos pronto a <span className="text-white/60">{form.email}</span>.
                 </p>
@@ -175,7 +175,7 @@ export default function ContactPage() {
         {/* Sidebar info */}
         <div className="md:col-span-2 space-y-8">
           <div className="space-y-6">
-            <h3 className="font-display italic text-xl text-white">Otras formas de contacto</h3>
+            <h3 className="font-display text-xl text-white">Otras formas de contacto</h3>
 
             {[
               {

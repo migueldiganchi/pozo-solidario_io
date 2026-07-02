@@ -54,7 +54,6 @@ export default async function Image() {
             color: 'white',
             margin: 0,
             letterSpacing: '-2px',
-            fontStyle: 'italic',
           }}
         >
           Pozo Solidario

@@ -91,7 +91,7 @@ export function ParticipationModal({ isOpen, onClose, visitorId }: Participation
                 {/* Header */}
                 <div className="flex items-start justify-between">
                   <div>
-                    <h2 className="font-display italic text-2xl text-white">Participar</h2>
+                    <h2 className="font-display text-2xl text-white">Participar</h2>
                     <p className="text-white/40 text-sm mt-1">Elegí cuántos números querés</p>
                   </div>
                   <button
@@ -120,7 +120,7 @@ export function ParticipationModal({ isOpen, onClose, visitorId }: Participation
                           -{pkg.discount * 100}%
                         </span>
                       )}
-                      <div className="text-2xl font-display italic text-white">{pkg.quantity}</div>
+                      <div className="text-2xl font-display text-white">{pkg.quantity}</div>
                       <div className="text-xs text-white/40 mt-0.5">{pkg.label}</div>
                       <div className="text-sm text-white/70 mt-2 font-medium">
                         {formatCurrency(Math.floor(pkg.quantity * PRICE_PER_NUMBER * (1 - pkg.discount)))}
@@ -132,7 +132,7 @@ export function ParticipationModal({ isOpen, onClose, visitorId }: Participation
                 {/* Total */}
                 <div className="flex items-center justify-between py-4 border-t border-white/8">
                   <div className="text-white/50 text-sm">Total a pagar</div>
-                  <div className="text-white font-semibold text-xl font-display italic">{formatCurrency(total)}</div>
+                  <div className="text-white font-semibold text-xl font-display">{formatCurrency(total)}</div>
                 </div>
 
                 {/* Breakdown */}

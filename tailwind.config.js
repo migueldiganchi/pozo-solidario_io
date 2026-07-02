@@ -8,9 +8,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-geist-sans)', 'system-ui', 'sans-serif'],
+        sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+        display: ['"Outfit"', 'system-ui', 'sans-serif'],
         mono: ['var(--font-geist-mono)', 'monospace'],
-        display: ['var(--font-display)', 'system-ui', 'sans-serif'],
       },
       colors: {
         // New Design System Colors

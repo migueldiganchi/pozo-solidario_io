@@ -8,7 +8,7 @@ export function Footer() {
           {/* Brand */}
           <div className="col-span-2 md:col-span-1 space-y-4">
             <img src="/logo.png" alt="Logo" className="w-10 h-10 object-contain opacity-70 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500" />
-            <p className="font-display italic text-xl text-text">Pozo Solidario</p>
+            <p className="font-display text-xl text-text">Pozo Solidario</p>
             <p className="text-text-secondary text-xs leading-relaxed">
               Internet unido generando ayuda real.
             </p>

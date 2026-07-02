@@ -29,7 +29,7 @@ export function Winners() {
       <div className="max-w-4xl mx-auto space-y-12">
         <div>
           <div className="text-xs text-white/30 uppercase tracking-widest mb-3 font-medium">Historial</div>
-          <h2 className="font-display italic text-4xl md:text-5xl text-white">Ganadores</h2>
+          <h2 className="font-display text-4xl md:text-5xl text-white">Ganadores</h2>
           <p className="text-white/40 text-sm mt-2">Sorteos verificados con Random.org.</p>
         </div>
 

@@ -12,7 +12,7 @@ export default function Error({ error, reset }: { error: Error; reset: () => voi
     <main className="min-h-screen flex flex-col items-center justify-center px-6 text-center space-y-6">
       <div className="text-5xl">⚡</div>
       <div className="space-y-2">
-        <h1 className="font-display italic text-3xl text-white">Algo salió mal</h1>
+        <h1 className="font-display text-3xl text-white">Algo salió mal</h1>
         <p className="text-white/30 text-sm">Ocurrió un error inesperado.</p>
       </div>
       <div className="flex gap-3">

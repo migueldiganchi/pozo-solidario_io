@@ -121,7 +121,7 @@ export function Hero({ onParticipate }: HeroProps) {
           transition={{ delay: 0.2, duration: 0.5 }}
           className="space-y-3"
         >
-          <div className="font-display italic text-[clamp(3.5rem,12vw,7rem)] leading-none text-white text-glow">
+          <div className="font-display text-[clamp(3.5rem,12vw,7rem)] leading-none text-white text-glow">
             {loading ? (
               <span className="opacity-20">$0</span>
             ) : (

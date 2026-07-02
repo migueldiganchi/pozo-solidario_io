@@ -108,7 +108,7 @@ export default function TerminosPage() {
       {/* Final Brand Reference */}
       <div className="pt-24 pb-8 flex flex-col items-center gap-4 opacity-20">
         <img src="/logo.png" alt="Pozo Solidario" className="w-12 h-12 object-contain grayscale" />
-        <p className="font-display italic text-sm text-text">Pozo Solidario</p>
+        <p className="font-display text-sm text-text">Pozo Solidario</p>
       </div>
     </LegalLayout>
   )

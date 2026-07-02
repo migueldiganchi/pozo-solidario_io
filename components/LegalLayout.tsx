@@ -44,7 +44,7 @@ export function LegalLayout({ title, subtitle, badge, lastUpdated, children }: L
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.05 }}
-            className="font-display italic text-4xl md:text-6xl text-white leading-tight"
+            className="font-display text-4xl md:text-6xl text-white leading-tight"
           >
             {title}
           </motion.h1>
@@ -77,7 +77,7 @@ export function LegalLayout({ title, subtitle, badge, lastUpdated, children }: L
       {/* Footer simple */}
       <div className="border-t border-white/5 py-10 px-6">
         <div className="max-w-3xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-          <Link href="/" className="font-display italic text-white/40 hover:text-white/70 transition-colors">
+          <Link href="/" className="font-display text-white/40 hover:text-white/70 transition-colors">
             Pozo Solidario
           </Link>
           <div className="flex gap-6 text-xs text-white/20">
@@ -96,7 +96,7 @@ export function LegalLayout({ title, subtitle, badge, lastUpdated, children }: L
 export function Section({ title, children }: { title: string; children: ReactNode }) {
   return (
     <section className="mb-12">
-      <h2 className="font-display italic text-2xl text-white mb-4">{title}</h2>
+      <h2 className="font-display text-2xl text-white mb-4">{title}</h2>
       <div className="space-y-4 text-white/50 text-sm leading-relaxed">
         {children}
       </div>
@@ -123,7 +123,7 @@ export function UL({ items }: { items: string[] }) {
 
 export function Highlight({ children }: { children: ReactNode }) {
   return (
-    <div className="border-l-2 border-green-400/30 pl-4 py-1 text-white/60 text-sm italic leading-relaxed">
+    <div className="border-l-2 border-green-400/30 pl-4 py-1 text-white/60 text-sm leading-relaxed">
       {children}
     </div>
   )
